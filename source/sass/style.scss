@@ -1,4 +1,11 @@
 // Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
+
+// Common
+@import "common/mixin";
+@import "common/fonts";
+@import "common/variables";
+@import "common/global";
+@import "common/visually-hidden";
+
+// Blocks

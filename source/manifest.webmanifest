@@ -1,0 +1,7 @@
+{"icons": [
+  { "src": "favicons/internship-favicon180.png", "type": "image/png", "sizes": "180x180" },
+  { "src": "favicons/internship-favicon192.png", "type": "image/png", "sizes": "192x192" },
+  { "src": "favicons/internship-favicon256.png", "type": "image/png", "sizes": "256x256" },
+  { "src": "favicons/internship-favicon512.png", "type": "image/png", "sizes": "512x512" }
+]
+}

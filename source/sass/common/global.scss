@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  box-sizing: border-box;
+  color: $text-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
