@@ -16,7 +16,197 @@
     <link rel="preload" href="fonts/manrope-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
 
-  <body class="page-body">
+  <body class="body">
+    <header class="body__header header">
+      <div class="header__wrapper main-wrapper">
+        <div class="header__logo-wrapper">
+          <img class="header__logo" src="img/logo-header.svg" width="52" height="52" alt="Логотип проекта Стажировка.">
+        </div>
+        <div class="header__nav-wrapper">
+          <h2 class="visually-hidden">Навигация сайта</h2>
+          <button class="header__nav-button" type="button">меню</button>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <h3 class="header__nav-item-title">
+                  <a class="header__nav-link" href="#">o проекте</a>
+                </h3>
+              </li>
+              <li class="header__nav-item">
+                <h3 class="header__nav-item-title">
+                  <button class="header__nav-item-button" type="button">Программы</button>
+                </h3>
+                <ul class="header__inner-list header__inner-list--program">
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">Стажировки</a>
+                  </li>
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">Волонтёрство</a>
+                  </li>
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">Учёба</a>
+                  </li>
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">Религия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-item">
+                <h3 class="header__nav-item-title">
+                  <a class="header__nav-link" href="#">как поехать</a>
+                </h3>
+              </li>
+              <li class="header__nav-item">
+                <h3 class="header__nav-item-title">
+                  <a class="header__nav-link" href="#">отзывы</a>
+                </h3>
+              </li>
+              <li class="header__nav-item">
+                <h3 class="header__nav-item-title">
+                  <button class="header__nav-item-button" type="button">новости</button>
+                </h3>
+                <ul class="header__inner-list header__inner-list--news">
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">общее</a>
+                  </li>
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">волонтёрство</a>
+                  </li>
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">стажировки</a>
+                  </li>
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">карьера</a>
+                  </li>
+                  <li class="header__inner-item">
+                    <a class="header__inner-link" href="#">путешествия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-item">
+                <h3 class="header__nav-item-title">
+                  <a class="header__nav-link" href="#">контакты</a>
+                </h3>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="body__main main">
+
+      <section class="main__hero hero" data-test="hero">
+        <div class="hero__wrapper">
+          <h1 class="visually-hidden">Проект Стажировка!</h1>
+          <div class="hero__swiper swiper swiper--hero">
+            <h2 class="visually-hidden">Для чего нужен проект Стажировка?</h2>
+            <div class="hero__swiper-wrapper swiper-wrapper">
+              <div class="hero__swiper-slide swiper-slide">
+                <picture>
+                  <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-slide-education-desktop@1x.webp 1x, img/hero-slide-education-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-slide-education-tablet@1x.webp 1x, img/hero-slide-education-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="img/hero-slide-education-mobile@1x.webp 1x, img/hero-slide-education-mobile@2x.webp 2x" width="320" height="568">
+                  <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-slide-education-desktop@1x.jpg 1x, img/hero-slide-education-desktop@2x.jpg 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-slide-education-tablet@1x.jpg 1x, img/hero-slide-education-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__slide-image" src="img/hero-slide-education-mobile@1x.jpg" srcset="img/hero-slide-education-mobile@2x.jpg 2x" width="320" height="568" alt="Девушка в очках с кудрявыми волосами в желтом свитшоте и джинсах стоит на фоне здания.">
+                </picture>
+                <div class="hero__swiper-slide-wrapper">
+                  <div class="hero__swiper-pagination swiper-pagination swiper-pagination--hero"></div>
+                  <h3 class="hero__swiper-slide-title">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
+                  <div class="hero__swiper-slide-container">
+                    <p>Погрузитесь в академическую программу, проходя практику в&nbsp;разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                    <div class="hero__swiper-slide-button-container">
+                      <a class="hero__swiper-slide-button" href="#">подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__swiper-slide swiper-slide">
+                <picture>
+                  <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-slide-education-desktop@1x.webp 1x, img/hero-slide-education-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-slide-education-tablet@1x.webp 1x, img/hero-slide-education-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="img/hero-slide-education-mobile@1x.webp 1x, img/hero-slide-education-mobile@2x.webp 2x" width="320" height="568">
+                  <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-slide-education-desktop@1x.jpg 1x, img/hero-slide-education-desktop@2x.jpg 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-slide-education-tablet@1x.jpg 1x, img/hero-slide-education-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__slide-image" src="img/hero-slide-education-mobile@1x.jpg" srcset="img/hero-slide-education-mobile@2x.jpg 2x" width="320" height="568" alt="Девушка в очках с кудрявыми волосами в желтом свитшоте и джинсах стоит на фоне здания.">
+                </picture>
+                <div class="hero__swiper-slide-wrapper">
+                  <div class="hero__swiper-pagination swiper-pagination swiper-pagination--hero"></div>
+                  <h3 class="hero__swiper-slide-title">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
+                  <div class="hero__swiper-slide-container">
+                    <p>Погрузитесь в академическую программу, проходя практику в&nbsp;разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                    <div class="hero__swiper-slide-button-container">
+                      <a class="hero__swiper-slide-button" href="#">подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__swiper-slide swiper-slide">
+                <picture>
+                  <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-slide-education-desktop@1x.webp 1x, img/hero-slide-education-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-slide-education-tablet@1x.webp 1x, img/hero-slide-education-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="img/hero-slide-education-mobile@1x.webp 1x, img/hero-slide-education-mobile@2x.webp 2x" width="320" height="568">
+                  <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-slide-education-desktop@1x.jpg 1x, img/hero-slide-education-desktop@2x.jpg 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-slide-education-tablet@1x.jpg 1x, img/hero-slide-education-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__slide-image" src="img/hero-slide-education-mobile@1x.jpg" srcset="img/hero-slide-education-mobile@2x.jpg 2x" width="320" height="568" alt="Девушка в очках с кудрявыми волосами в желтом свитшоте и джинсах стоит на фоне здания.">
+                </picture>
+                <div class="hero__swiper-slide-wrapper">
+                  <div class="hero__swiper-pagination swiper-pagination swiper-pagination--hero"></div>
+                  <h3 class="hero__swiper-slide-title">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
+                  <div class="hero__swiper-slide-container">
+                    <p>Погрузитесь в академическую программу, проходя практику в&nbsp;разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                    <div class="hero__swiper-slide-button-container">
+                      <a class="hero__swiper-slide-button" href="#">подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="body__about about" data-test="about">
+        <div class="about__wrapper main-wrapper">
+          <div class="about__text-wrapper">
+            <div class="about__title-container">
+              <h2 class="about__title">О проекте «Стажировка»</h2>
+              <p>«Стажировка» — совместный проект правительств и волонтёрских бригад.</p>
+            </div>
+            <div class="about__description-container">
+              <h3>Наша цель</h3>
+              <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с&nbsp;которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
+              <button class="about__button-modal button" type="button">подробнее о проекте</button>
+            </div>
+          </div>
+          <ul class="about__list">
+            <li class="about__item">
+              <h3>Более 250 программ</h3>
+              <p>учебных и рабочих, разной длительностью от&nbsp;3&nbsp;месяцев до 1 года</p>
+            </li>
+            <li class="about__item">
+              <h3>Более 3000 участников</h3>
+              <p>уже успешно прошли программу от&nbsp;«Стажировка» и&nbsp;остались в разных странах</p>
+            </li>
+            <li class="about__item">
+              <h3>участники из&nbsp;60&nbsp;стран</h3>
+              <p>студенты со всего мира приезжают на программу «Стажировки» от&nbsp;3&nbsp;месяцев до&nbsp;1 года</p>
+            </li>
+            <li class="about__item">
+              <h3>от 4 200 $<br>до 8 400 $</h3>
+              <p>грант всем участникам для&nbsp;комфортного прохождения программы</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="body__footer footer">
+
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
   </body>
 
 </html>
@@ -28,8 +218,6 @@
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
 <!-- примеры требуемых атрибутов data-test="*" -->
-<!-- <div data-test="hero">hero</div> -->
-<!-- <div data-test="about">about</div> -->
 <!-- <div data-test="programs">programs</div> -->
 <!-- <div data-test="grant">grant</div> -->
 <!-- <div data-test="news">news</div> -->
