@@ -206,6 +206,43 @@
 
     </footer>
 
+    <div class="body__modal modal modal--open">
+      <div class="modal__wrapper">
+        <button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть окно.</span></button>
+        <h2 class="modal__title">Напишите нам</h2>
+        <p class="modal__description">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы – мы на них ответим!</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal__input-container">
+            <label class="modal__label" for="name">Имя</label>
+            <input class="modal__input modal__validate-element modal__validate-element--string modal__validate-element--name" type="text" id="name" name="name" required aria-label="Укажите свое имя.">
+          </div>
+          <div class="modal__input-container">
+            <label class="modal__label" for="phone">Телефон</label>
+            <input class="modal__input modal__validate-element modal__validate-element--string modal__validate-element--phone" type="tel" id="phone" name="phone" required aria-label="Укажите свой телефон.">
+          </div>
+          <div class="modal__input-container">
+            <label class="modal__label" for="city">Выберите город</label>
+            <div class="modal__select-container">
+              <select class="modal__select modal__validate-element modal__validate-element--string modal__validate-element--city" name="select" id="city" required aria-label="Укажите город.">
+                <option value="" selected></option>
+                <option value="moscow">Москва</option>
+                <option value="vologda">Вологда</option>
+                <option value="penza">Пенза</option>
+                <option value="tver">Тверь</option>
+              </select>
+              <span class="modal__select-mark"></span>
+            </div>
+          </div>
+          <div class="modal__input-container">
+            <input class="modal__input modal__input--checkbox modal__validate-element modal__validate-element--data visually-hidden" type="checkbox" id="data" name="data" required>
+            <label class="modal__label modal__label--checkbox" for="data">Я согласен на обработку моих персональных данных</label>
+            <span class="modal__custom-input"></span>
+          </div>
+          <button class="form__button-submit button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
     <script type="module" src="js/main.js"></script>
   </body>
 
@@ -217,7 +254,7 @@
 <!-- <svg>
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
-<!-- примеры требуемых атрибутов data-test="*" -->
+
 <!-- <div data-test="programs">programs</div> -->
 <!-- <div data-test="grant">grant</div> -->
 <!-- <div data-test="news">news</div> -->
@@ -226,4 +263,3 @@
 <!-- <div data-test="contacts">contacts</div> -->
 <!-- <div data-test="form">form</div> -->
 <!-- <div data-test="footer">footer</div> -->
-<!-- <script type="module" src="js/main.js"></script> -->

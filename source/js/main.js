@@ -5,8 +5,11 @@
 
 import { addSwitcherBurger, listMenuOpener } from './nav-switcher.js';
 import { initHeroSwiper } from './swipers.js';
+import { openModal, addFormValidate } from './modal-validate.js';
 
 
 addSwitcherBurger();
 listMenuOpener();
 initHeroSwiper();
+openModal();
+addFormValidate();
