@@ -99,7 +99,7 @@
       <section class="main__hero hero" data-test="hero">
         <div class="hero__wrapper">
           <h1 class="visually-hidden">Проект Стажировка!</h1>
-          <div class="hero__swiper swiper swiper--hero">
+          <div class="hero__swiper swiper">
             <h2 class="visually-hidden">Для чего нужен проект Стажировка?</h2>
             <div class="hero__swiper-wrapper swiper-wrapper">
               <div class="hero__swiper-slide swiper-slide">
@@ -200,13 +200,135 @@
         </div>
       </section>
 
+      <section class="body__programs programs" data-test="programs">
+        <div class="programs__wrapper">
+          <h2 class="programs__title">Программы</h2>
+          <div class="programs__swiper-container">
+            <div class="programs__swiper swiper">
+              <ul class="programs__swiper-wrapper swiper-wrapper">
+                <li class="programs__swiper-slide swiper-slide">
+                  <div class="programs__slide-image-wrapper">
+                    <picture>
+                      <source media="(min-width:1440px)" type="image/webp" srcset="img/programs-internship-desktop@1x.webp 1x, img/programs-internship-desktop@2x.webp 2x" width="392" height="420">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="img/programs-internship-tablet@1x.webp 1x, img/programs-internship-tablet@2x.webp 2x" width="324" height="420">
+                      <source type="image/webp" srcset="img/programs-internship-mobile@1x.webp 1x, img/programs-internship-mobile@2x.webp 2x" width="290" height="400">
+                      <source media="(min-width:1440px)" type="image/jpeg" srcset="img/programs-internship-desktop@1x.jpg 1x, img/programs-internship-desktop@2x.jpg 2x" width="392" height="420">
+                      <source media="(min-width: 768px)" type="image/jpeg" srcset="img/programs-internship-tablet@1x.jpg 1x, img/programs-internship-tablet@2x.jpg 2x" width="324" height="420">
+                      <img class="programs__slide-image" src="img/programs-internship-mobile@1x.jpg" srcset="img/programs-internship-mobile@2x.jpg 2x" width="290" height="400" alt="Две девушки в офисе увлеченно смотрят на планшет с документом.">
+                    </picture>
+                  </div>
+                  <div class="programs__slide-content-container">
+                    <h3 class="programs__slide-title">Стажировки</h3>
+                    <div class="programs__slide-text-wrapper">
+                      <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                      <a class="programs__slide-link" href="#"><span class="visually-hidden">Стажировки.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="programs__swiper-slide swiper-slide">
+                  <div class="programs__slide-image-wrapper">
+                    <picture>
+                      <source media="(min-width:1440px)" type="image/webp" srcset="img/programs-volunteering-desktop@1x.webp 1x, img/programs-volunteering-desktop@2x.webp 2x" width="392" height="420">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="img/programs-volunteering-tablet@1x.webp 1x, img/programs-volunteering-tablet@2x.webp 2x" width="324" height="420">
+                      <source type="image/webp" srcset="img/programs-volunteering-mobile@1x.webp 1x, img/programs-volunteering-mobile@2x.webp 2x" width="290" height="400">
+                      <source media="(min-width:1440px)" type="image/jpeg" srcset="img/programs-volunteering-desktop@1x.jpg 1x, img/programs-volunteering-desktop@2x.jpg 2x" width="392" height="420">
+                      <source media="(min-width: 768px)" type="image/jpeg" srcset="img/programs-volunteering-tablet@1x.jpg 1x, img/programs-volunteering-tablet@2x.jpg 2x" width="324" height="420">
+                      <img class="programs__slide-image" src="img/programs-volunteering-mobile@1x.jpg" srcset="img/programs-volunteering-mobile@2x.jpg 2x" width="290" height="400" alt="Молодой парень в футболке с надписью volunteer улыбается смотря в камеру.">
+                    </picture>
+                  </div>
+                  <div class="programs__slide-content-container">
+                    <h3 class="programs__slide-title">Волонтёрство</h3>
+                    <div class="programs__slide-text-wrapper">
+                      <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества.</p>
+                      <a class="programs__slide-link" href="#"><span class="visually-hidden">Волонтёрство.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="programs__swiper-slide swiper-slide">
+                  <div class="programs__slide-image-wrapper">
+                    <picture>
+                      <source media="(min-width:1440px)" type="image/webp" srcset="img/programs-study-desktop@1x.webp 1x, img/programs-study-desktop@2x.webp 2x" width="392" height="420">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="img/programs-study-tablet@1x.webp 1x, img/programs-study-tablet@2x.webp 2x" width="324" height="420">
+                      <source type="image/webp" srcset="img/programs-study-mobile@1x.webp 1x, img/programs-study-mobile@2x.webp 2x" width="290" height="400">
+                      <source media="(min-width:1440px)" type="image/jpeg" srcset="img/programs-study-desktop@1x.jpg 1x, img/programs-study-desktop@2x.jpg 2x" width="392" height="420">
+                      <source media="(min-width: 768px)" type="image/jpeg" srcset="img/programs-study-tablet@1x.jpg 1x, img/programs-study-tablet@2x.jpg 2x" width="324" height="420">
+                      <img class="programs__slide-image" src="img/programs-study-mobile@1x.jpg" srcset="img/programs-study-mobile@2x.jpg 2x" width="290" height="400" alt="Мужчина в очках и книгой в руках пристально изучает документы на столе.">
+                    </picture>
+                  </div>
+                  <div class="programs__slide-content-container">
+                    <h3 class="programs__slide-title">Учёба</h3>
+                    <div class="programs__slide-text-wrapper">
+                      <p>Получите образование и&nbsp;измените своё будущее.</p>
+                      <a class="programs__slide-link" href="#"><span class="visually-hidden">Учёба.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="programs__swiper-slide swiper-slide">
+                  <div class="programs__slide-image-wrapper">
+                    <picture>
+                      <source media="(min-width:1440px)" type="image/webp" srcset="img/programs-internship-desktop@1x.webp 1x, img/programs-internship-desktop@2x.webp 2x" width="392" height="420">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="img/programs-internship-tablet@1x.webp 1x, img/programs-internship-tablet@2x.webp 2x" width="324" height="420">
+                      <source type="image/webp" srcset="img/programs-internship-mobile@1x.webp 1x, img/programs-internship-mobile@2x.webp 2x" width="290" height="400">
+                      <source media="(min-width:1440px)" type="image/jpeg" srcset="img/programs-internship-desktop@1x.jpg 1x, img/programs-internship-desktop@2x.jpg 2x" width="392" height="420">
+                      <source media="(min-width: 768px)" type="image/jpeg" srcset="img/programs-internship-tablet@1x.jpg 1x, img/programs-internship-tablet@2x.jpg 2x" width="324" height="420">
+                      <img class="programs__slide-image" src="img/programs-internship-mobile@1x.jpg" srcset="img/programs-internship-mobile@2x.jpg 2x" width="290" height="400" alt="Две девушки в офисе увлеченно смотрят на планшет с документом.">
+                    </picture>
+                  </div>
+                  <div class="programs__slide-content-container">
+                    <h3 class="programs__slide-title">Стажировки</h3>
+                    <div class="programs__slide-text-wrapper">
+                      <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                      <a class="programs__slide-link" href="#"><span class="visually-hidden">Стажировки.</span></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="programs__interaction-wrapper">
+              <div class="programs__swiper-scrollbar swiper-scrollbar"></div>
+              <div class="programs__button-wrapper">
+                <button class="programs__swiper-button-prev swiper-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд.</span></button>
+                <button class="programs__swiper-button-next swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд.</span></button>
+              </div>
+            </div>
+          </div>
+          <a class="programs__more-button button" href="#">все программы</a>
+        </div>
+      </section>
+
+      <section class="body__grant grant" data-test="grant">
+        <div class="grant__wrapper main-wrapper">
+          <div class="grant__content-image-wrapper">
+            <h2 class="grant__title">Как поехать</h2>
+            <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных программах и&nbsp;городах, в которых можете пройти программу.</p>
+            <picture>
+              <source media="(min-width:1440px)" type="image/webp" srcset="img/grant-main-desktop@1x.webp 1x, img/grant-main-desktop@2x.webp 2x" width="498" height="363">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/grant-main-tablet@1x.webp 1x, img/grant-main-tablet@2x.webp 2x" width="678" height="375">
+              <source type="image/webp" srcset="img/grant-main-mobile@1x.webp 1x, img/grant-main-mobile@2x.webp 2x"  width="290" height="200">
+              <source media="(min-width:1440px)" type="image/jpeg" srcset="img/grant-main-desktop@1x.jpg 1x, img/grant-main-desktop@2x.jpg 2x" width="498" height="363">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/grant-main-tablet@1x.jpg 1x, img/grant-main-tablet@2x.jpg 2x" width="678" height="375">
+              <img class="grant__image" src="img/grant-main-mobile@1x.jpg" srcset="img/grant-main-mobile@2x.jpg 2x" width="290" height="200" alt="Табличка с направлениями в стороны разных стран с указание километров до границы страны.">
+            </picture>
+          </div>
+          <div class="grant__content-list-wrapper">
+            <h3 class="grant__list-title">Чтобы получить грант на&nbsp;обучение, вам нужно:</h3>
+            <ul class="grant__list">
+              <li class="grant__item">Быть в возрасте от 16 до 30 лет</li>
+              <li class="grant__item">Иметь оконченное среднее образование</li>
+              <li class="grant__item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
+              <li class="grant__item">За последние 2 года быть не&nbsp;больше 3х месяцев подряд непрерывно в одной стране</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="body__footer footer">
 
     </footer>
 
-    <div class="body__modal modal modal--open">
+    <div class="body__modal modal">
       <div class="modal__wrapper">
         <button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть окно.</span></button>
         <h2 class="modal__title">Напишите нам</h2>
@@ -255,7 +377,6 @@
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
 
-<!-- <div data-test="programs">programs</div> -->
 <!-- <div data-test="grant">grant</div> -->
 <!-- <div data-test="news">news</div> -->
 <!-- <div data-test="FAQ">FAQ</div> -->
