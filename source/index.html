@@ -101,8 +101,8 @@
           <h1 class="visually-hidden">Проект Стажировка!</h1>
           <div class="hero__swiper swiper">
             <h2 class="visually-hidden">Для чего нужен проект Стажировка?</h2>
-            <div class="hero__swiper-wrapper swiper-wrapper">
-              <div class="hero__swiper-slide swiper-slide">
+            <ul class="hero__swiper-wrapper swiper-wrapper">
+              <li class="hero__swiper-slide swiper-slide">
                 <picture>
                   <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-slide-education-desktop@1x.webp 1x, img/hero-slide-education-desktop@2x.webp 2x" width="1440" height="800">
                   <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-slide-education-tablet@1x.webp 1x, img/hero-slide-education-tablet@2x.webp 2x" width="768" height="1024">
@@ -112,7 +112,11 @@
                   <img class="hero__slide-image" src="img/hero-slide-education-mobile@1x.jpg" srcset="img/hero-slide-education-mobile@2x.jpg 2x" width="320" height="568" alt="Девушка в очках с кудрявыми волосами в желтом свитшоте и джинсах стоит на фоне здания.">
                 </picture>
                 <div class="hero__swiper-slide-wrapper">
-                  <div class="hero__swiper-pagination swiper-pagination swiper-pagination--hero"></div>
+                  <div class="hero__swiper-bullets-list">
+                    <button class="hero__swiper-bullet hero__swiper-bullet--active" data-index="0" type="button"><span class="visually-hidden">Первый Слайд.</span></button>
+                    <button class="hero__swiper-bullet" data-index="1" type="button"><span class="visually-hidden">Второй Слайд.</span></button>
+                    <button class="hero__swiper-bullet" data-index="2" type="button"><span class="visually-hidden">Третий Слайд.</span></button>
+                  </div>
                   <h3 class="hero__swiper-slide-title">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
                   <div class="hero__swiper-slide-container">
                     <p>Погрузитесь в академическую программу, проходя практику в&nbsp;разных городах, ощущая настоящий студенческий стиль жизни!</p>
@@ -121,48 +125,56 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="hero__swiper-slide swiper-slide">
+              </li>
+              <li class="hero__swiper-slide swiper-slide">
                 <picture>
-                  <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-slide-education-desktop@1x.webp 1x, img/hero-slide-education-desktop@2x.webp 2x" width="1440" height="800">
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-slide-education-tablet@1x.webp 1x, img/hero-slide-education-tablet@2x.webp 2x" width="768" height="1024">
-                  <source type="image/webp" srcset="img/hero-slide-education-mobile@1x.webp 1x, img/hero-slide-education-mobile@2x.webp 2x" width="320" height="568">
-                  <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-slide-education-desktop@1x.jpg 1x, img/hero-slide-education-desktop@2x.jpg 2x" width="1440" height="800">
-                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-slide-education-tablet@1x.jpg 1x, img/hero-slide-education-tablet@2x.jpg 2x" width="768" height="1024">
-                  <img class="hero__slide-image" src="img/hero-slide-education-mobile@1x.jpg" srcset="img/hero-slide-education-mobile@2x.jpg 2x" width="320" height="568" alt="Девушка в очках с кудрявыми волосами в желтом свитшоте и джинсах стоит на фоне здания.">
+                  <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-slide-society-desktop@1x.webp 1x, img/hero-slide-society-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-slide-society-tablet@1x.webp 1x, img/hero-slide-society-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="img/hero-slide-society-mobile@1x.webp 1x, img/hero-slide-society-mobile@2x.webp 2x" width="320" height="568">
+                  <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-slide-society-desktop@1x.jpg 1x, img/hero-slide-society-desktop@2x.jpg 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-slide-society-tablet@1x.jpg 1x, img/hero-slide-society-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__slide-image" src="img/hero-slide-society-mobile@1x.jpg" srcset="img/hero-slide-society-mobile@2x.jpg 2x" loading="lazy" width="320" height="568" alt="Девушка в очках с кудрявыми волосами в желтом свитшоте и джинсах стоит на фоне здания.">
                 </picture>
                 <div class="hero__swiper-slide-wrapper">
-                  <div class="hero__swiper-pagination swiper-pagination swiper-pagination--hero"></div>
-                  <h3 class="hero__swiper-slide-title">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
+                  <div class="hero__swiper-bullets-list">
+                    <button class="hero__swiper-bullet hero__swiper-bullet--active" data-index="0" type="button"><span class="visually-hidden">Первый Слайд.</span></button>
+                    <button class="hero__swiper-bullet" data-index="1" type="button"><span class="visually-hidden">Второй Слайд.</span></button>
+                    <button class="hero__swiper-bullet" data-index="2" type="button"><span class="visually-hidden">Третий Слайд.</span></button>
+                  </div>
+                  <h3 class="hero__swiper-slide-title">Волонтёрские программы – внесите свой вклад в общество</h3>
                   <div class="hero__swiper-slide-container">
-                    <p>Погрузитесь в академическую программу, проходя практику в&nbsp;разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                    <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
                     <div class="hero__swiper-slide-button-container">
-                      <a class="hero__swiper-slide-button" href="#">подробнее</a>
+                      <a class="hero__swiper-slide-button button" href="#">подробнее</a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="hero__swiper-slide swiper-slide">
+              </li>
+              <li class="hero__swiper-slide swiper-slide">
                 <picture>
-                  <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-slide-education-desktop@1x.webp 1x, img/hero-slide-education-desktop@2x.webp 2x" width="1440" height="800">
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-slide-education-tablet@1x.webp 1x, img/hero-slide-education-tablet@2x.webp 2x" width="768" height="1024">
-                  <source type="image/webp" srcset="img/hero-slide-education-mobile@1x.webp 1x, img/hero-slide-education-mobile@2x.webp 2x" width="320" height="568">
-                  <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-slide-education-desktop@1x.jpg 1x, img/hero-slide-education-desktop@2x.jpg 2x" width="1440" height="800">
-                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-slide-education-tablet@1x.jpg 1x, img/hero-slide-education-tablet@2x.jpg 2x" width="768" height="1024">
-                  <img class="hero__slide-image" src="img/hero-slide-education-mobile@1x.jpg" srcset="img/hero-slide-education-mobile@2x.jpg 2x" width="320" height="568" alt="Девушка в очках с кудрявыми волосами в желтом свитшоте и джинсах стоит на фоне здания.">
+                  <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-slide-internship-desktop@1x.webp 1x, img/hero-slide-internship-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-slide-internship-tablet@1x.webp 1x, img/hero-slide-internship-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="img/hero-slide-internship-mobile@1x.webp 1x, img/hero-slide-internship-mobile@2x.webp 2x" width="320" height="568">
+                  <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-slide-internship-desktop@1x.jpg 1x, img/hero-slide-internship-desktop@2x.jpg 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-slide-internship-tablet@1x.jpg 1x, img/hero-slide-internship-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__slide-image" src="img/hero-slide-internship-mobile@1x.jpg" srcset="img/hero-slide-internship-mobile@2x.jpg 2x" loading="lazy" width="320" height="568" alt="Девушка в очках с кудрявыми волосами в желтом свитшоте и джинсах стоит на фоне здания.">
                 </picture>
                 <div class="hero__swiper-slide-wrapper">
-                  <div class="hero__swiper-pagination swiper-pagination swiper-pagination--hero"></div>
-                  <h3 class="hero__swiper-slide-title">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
+                  <div class="hero__swiper-bullets-list">
+                    <button class="hero__swiper-bullet hero__swiper-bullet--active" data-index="0" type="button"><span class="visually-hidden">Первый Слайд.</span></button>
+                    <button class="hero__swiper-bullet" data-index="1" type="button"><span class="visually-hidden">Второй Слайд.</span></button>
+                    <button class="hero__swiper-bullet" data-index="2" type="button"><span class="visually-hidden">Третий Слайд.</span></button>
+                  </div>
+                  <h3 class="hero__swiper-slide-title">Программы стажировок в крупнейших компаниях мира</h3>
                   <div class="hero__swiper-slide-container">
-                    <p>Погрузитесь в академическую программу, проходя практику в&nbsp;разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                    <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
                     <div class="hero__swiper-slide-button-container">
                       <a class="hero__swiper-slide-button" href="#">подробнее</a>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -214,7 +226,7 @@
                       <source type="image/webp" srcset="img/programs-internship-mobile@1x.webp 1x, img/programs-internship-mobile@2x.webp 2x" width="290" height="400">
                       <source media="(min-width:1440px)" type="image/jpeg" srcset="img/programs-internship-desktop@1x.jpg 1x, img/programs-internship-desktop@2x.jpg 2x" width="392" height="420">
                       <source media="(min-width: 768px)" type="image/jpeg" srcset="img/programs-internship-tablet@1x.jpg 1x, img/programs-internship-tablet@2x.jpg 2x" width="324" height="420">
-                      <img class="programs__slide-image" src="img/programs-internship-mobile@1x.jpg" srcset="img/programs-internship-mobile@2x.jpg 2x" width="290" height="400" alt="Две девушки в офисе увлеченно смотрят на планшет с документом.">
+                      <img class="programs__slide-image" src="img/programs-internship-mobile@1x.jpg" srcset="img/programs-internship-mobile@2x.jpg 2x" loading="lazy" width="290" height="400" alt="Две девушки в офисе увлеченно смотрят на планшет с документом.">
                     </picture>
                   </div>
                   <div class="programs__slide-content-container">
@@ -233,7 +245,7 @@
                       <source type="image/webp" srcset="img/programs-volunteering-mobile@1x.webp 1x, img/programs-volunteering-mobile@2x.webp 2x" width="290" height="400">
                       <source media="(min-width:1440px)" type="image/jpeg" srcset="img/programs-volunteering-desktop@1x.jpg 1x, img/programs-volunteering-desktop@2x.jpg 2x" width="392" height="420">
                       <source media="(min-width: 768px)" type="image/jpeg" srcset="img/programs-volunteering-tablet@1x.jpg 1x, img/programs-volunteering-tablet@2x.jpg 2x" width="324" height="420">
-                      <img class="programs__slide-image" src="img/programs-volunteering-mobile@1x.jpg" srcset="img/programs-volunteering-mobile@2x.jpg 2x" width="290" height="400" alt="Молодой парень в футболке с надписью volunteer улыбается смотря в камеру.">
+                      <img class="programs__slide-image" src="img/programs-volunteering-mobile@1x.jpg" srcset="img/programs-volunteering-mobile@2x.jpg 2x" loading="lazy" width="290" height="400" alt="Молодой парень в футболке с надписью volunteer улыбается смотря в камеру.">
                     </picture>
                   </div>
                   <div class="programs__slide-content-container">
@@ -252,7 +264,7 @@
                       <source type="image/webp" srcset="img/programs-study-mobile@1x.webp 1x, img/programs-study-mobile@2x.webp 2x" width="290" height="400">
                       <source media="(min-width:1440px)" type="image/jpeg" srcset="img/programs-study-desktop@1x.jpg 1x, img/programs-study-desktop@2x.jpg 2x" width="392" height="420">
                       <source media="(min-width: 768px)" type="image/jpeg" srcset="img/programs-study-tablet@1x.jpg 1x, img/programs-study-tablet@2x.jpg 2x" width="324" height="420">
-                      <img class="programs__slide-image" src="img/programs-study-mobile@1x.jpg" srcset="img/programs-study-mobile@2x.jpg 2x" width="290" height="400" alt="Мужчина в очках и книгой в руках пристально изучает документы на столе.">
+                      <img class="programs__slide-image" src="img/programs-study-mobile@1x.jpg" srcset="img/programs-study-mobile@2x.jpg 2x" loading="lazy" width="290" height="400" alt="Мужчина в очках и книгой в руках пристально изучает документы на столе.">
                     </picture>
                   </div>
                   <div class="programs__slide-content-container">
@@ -271,7 +283,7 @@
                       <source type="image/webp" srcset="img/programs-internship-mobile@1x.webp 1x, img/programs-internship-mobile@2x.webp 2x" width="290" height="400">
                       <source media="(min-width:1440px)" type="image/jpeg" srcset="img/programs-internship-desktop@1x.jpg 1x, img/programs-internship-desktop@2x.jpg 2x" width="392" height="420">
                       <source media="(min-width: 768px)" type="image/jpeg" srcset="img/programs-internship-tablet@1x.jpg 1x, img/programs-internship-tablet@2x.jpg 2x" width="324" height="420">
-                      <img class="programs__slide-image" src="img/programs-internship-mobile@1x.jpg" srcset="img/programs-internship-mobile@2x.jpg 2x" width="290" height="400" alt="Две девушки в офисе увлеченно смотрят на планшет с документом.">
+                      <img class="programs__slide-image" src="img/programs-internship-mobile@1x.jpg" srcset="img/programs-internship-mobile@2x.jpg 2x" loading="lazy" width="290" height="400" alt="Две девушки в офисе увлеченно смотрят на планшет с документом.">
                     </picture>
                   </div>
                   <div class="programs__slide-content-container">
@@ -307,7 +319,7 @@
               <source type="image/webp" srcset="img/grant-main-mobile@1x.webp 1x, img/grant-main-mobile@2x.webp 2x"  width="290" height="200">
               <source media="(min-width:1440px)" type="image/jpeg" srcset="img/grant-main-desktop@1x.jpg 1x, img/grant-main-desktop@2x.jpg 2x" width="498" height="363">
               <source media="(min-width: 768px)" type="image/jpeg" srcset="img/grant-main-tablet@1x.jpg 1x, img/grant-main-tablet@2x.jpg 2x" width="678" height="375">
-              <img class="grant__image" src="img/grant-main-mobile@1x.jpg" srcset="img/grant-main-mobile@2x.jpg 2x" width="290" height="200" alt="Табличка с направлениями в стороны разных стран с указание километров до границы страны.">
+              <img class="grant__image" src="img/grant-main-mobile@1x.jpg" srcset="img/grant-main-mobile@2x.jpg 2x" width="290" height="200" loading="lazy" alt="Табличка с направлениями в стороны разных стран с указание километров до границы страны.">
             </picture>
           </div>
           <div class="grant__content-list-wrapper">
@@ -317,6 +329,31 @@
               <li class="grant__item">Иметь оконченное среднее образование</li>
               <li class="grant__item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
               <li class="grant__item">За последние 2 года быть не&nbsp;больше 3х месяцев подряд непрерывно в одной стране</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="body__news news">
+        <div class="news__wrapper main-wrapper">
+          <h2 class="news__title">Новости и материалы</h2>
+          <div class="news__tab-swiper swiper">
+            <ul class="news__tab-swiper-wrapper swiper-wrapper">
+              <li class="news__tab-slide news__tab-slide--active swiper-slide">
+                <button class="news__tab-button" type="button">Общее</button>
+              </li>
+              <li class="news__tab-slide swiper-slide">
+                <button class="news__tab-button" type="button">Волонтёрство</button>
+              </li>
+              <li class="news__tab-slide swiper-slide">
+                <button class="news__tab-button" type="button">Стажировки</button>
+              </li>
+              <li class="news__tab-slide swiper-slide">
+                <button class="news__tab-button" type="button">Карьера</button>
+              </li>
+              <li class="news__tab-slide swiper-slide">
+                <button class="news__tab-button" type="button">Путешествия</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -377,7 +414,6 @@
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
 
-<!-- <div data-test="grant">grant</div> -->
 <!-- <div data-test="news">news</div> -->
 <!-- <div data-test="FAQ">FAQ</div> -->
 <!-- <div data-test="reviews">reviews</div> -->

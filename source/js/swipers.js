@@ -5,20 +5,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const initHeroSwiper = () => {
-  new Swiper('.hero__swiper', {
+const bullets = document.querySelectorAll('.hero__swiper-bullet');
 
-    modules: [Navigation, Pagination],
+const initHeroSwiper = () => {
+  const swiperHero = new Swiper('.hero__swiper', {
 
     loop: true,
     speed: 500,
     spaceBetween: 0,
-
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
 
     breakpoints: {
       1440: {
@@ -26,12 +20,40 @@ const initHeroSwiper = () => {
       },
     }
   });
+
+  // Функция для обновления активного слайда
+  function updateActiveSlide(index) {
+    swiperHero.slideTo(index);
+  }
+
+  // Добавляем событие клика на каждый bullet
+  bullets.forEach((bullet) => {
+    bullet.addEventListener('click', (event) => {
+      const index = parseInt(event.target.getAttribute('data-index'), 10);
+      updateActiveSlide(index);
+    });
+  });
+
+  // Слушаем событие смены слайда и обновляем активный bullet
+  swiperHero.on('slideChange', () => {
+    const activeIndex = swiperHero.realIndex;
+    bullets.forEach((bullet) => {
+      const bulletIndex = parseInt(bullet.getAttribute('data-index'), 10);
+      if (bulletIndex === activeIndex) {
+        bullet.classList.add('hero__swiper-bullet--active');
+      } else {
+        bullet.classList.remove('hero__swiper-bullet--active');
+      }
+    });
+  });
 };
 
+
+// Объявление Свайпера в блоке programs
 const initProgramsSwiper = () => {
   new Swiper('.programs__swiper', {
 
-    modules: [Navigation, Pagination, Scrollbar],
+    modules: [Navigation, Scrollbar],
 
     speed: 500,
     spaceBetween: 30,
@@ -68,4 +90,20 @@ const initProgramsSwiper = () => {
   });
 };
 
-export { initHeroSwiper, initProgramsSwiper };
+const initTabSwiper = () => {
+  new Swiper('.news__tab-swiper', {
+
+    speed: 500,
+    spaceBetween: 10,
+    slidesPerView: 'auto',
+
+
+    breakpoints: {
+      1440: {
+        allowTouchMove: false,
+      },
+    }
+  });
+};
+
+export { initHeroSwiper, initProgramsSwiper, initTabSwiper };
