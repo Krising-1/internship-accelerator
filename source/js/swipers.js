@@ -1,11 +1,15 @@
 import Swiper from 'swiper';
-import {Navigation, Pagination, Scrollbar} from 'swiper/modules';
+import {Navigation, Pagination, Scrollbar, Grid} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/grid';
 
-const bullets = document.querySelectorAll('.hero__swiper-bullet');
+const ACTIVE_SLIDES = 4;
+
+const heroBullets = document.querySelectorAll('.hero__swiper-bullet');
+
 
 const initHeroSwiper = () => {
   const swiperHero = new Swiper('.hero__swiper', {
@@ -27,7 +31,7 @@ const initHeroSwiper = () => {
   }
 
   // Добавляем событие клика на каждый bullet
-  bullets.forEach((bullet) => {
+  heroBullets.forEach((bullet) => {
     bullet.addEventListener('click', (event) => {
       const index = parseInt(event.target.getAttribute('data-index'), 10);
       updateActiveSlide(index);
@@ -37,7 +41,7 @@ const initHeroSwiper = () => {
   // Слушаем событие смены слайда и обновляем активный bullet
   swiperHero.on('slideChange', () => {
     const activeIndex = swiperHero.realIndex;
-    bullets.forEach((bullet) => {
+    heroBullets.forEach((bullet) => {
       const bulletIndex = parseInt(bullet.getAttribute('data-index'), 10);
       if (bulletIndex === activeIndex) {
         bullet.classList.add('hero__swiper-bullet--active');
@@ -106,4 +110,101 @@ const initTabSwiper = () => {
   });
 };
 
-export { initHeroSwiper, initProgramsSwiper, initTabSwiper };
+const initNewsSwiper = () => {
+  const swiperNews = new Swiper('.news__content-swiper', {
+
+    modules: [Navigation, Pagination, Grid],
+
+    speed: 500,
+
+    grid: {
+      rows: 2,
+      fill: 'row',
+    },
+
+    pagination: {
+      el: '.news__content-swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+
+    navigation: {
+      prevEl: '.news__content-swiper-button-prev',
+      nextEl: '.news__content-swiper-button-next',
+    },
+
+
+    breakpoints: {
+      1440: {
+        allowTouchMove: false,
+      },
+    }
+  });
+
+  const newsBullets = document.querySelectorAll('.news__content-swiper-pagination .swiper-pagination-bullet');
+
+
+  let bulletIndex = 0;
+
+  // Добавляем цифры на bullet свайпера
+  newsBullets.forEach((bullet) => {
+    bulletIndex ++;
+    bullet.textContent = `${bulletIndex}`;
+  });
+
+  // Делаем слайды видимыми если их меньше 4шт
+  newsBullets.forEach((bullet) => bullet.classList.add('swiper-pagination-bullet--visible'));
+
+  if (newsBullets.length > ACTIVE_SLIDES) {
+    const bulletsArr = Array.from(newsBullets);
+
+    let slidesPosition = 0;
+    let newBulletsArr;
+
+    const sliceSlides = (startBullet, lastBullet) => {
+      newsBullets.forEach((bullet) => bullet.classList.remove('swiper-pagination-bullet--visible'));
+      newBulletsArr = bulletsArr.slice(startBullet, lastBullet);
+      newBulletsArr.forEach((bullet) => bullet.classList.add('swiper-pagination-bullet--visible'));
+    };
+
+    sliceSlides(slidesPosition, ACTIVE_SLIDES + slidesPosition);
+
+    const sliceActualSlides = () => {
+      newBulletsArr.find((element, index) => {
+        if(element.classList.contains('swiper-pagination-bullet-active')) {
+
+          // Когда обновление слайдов идет на возрастание
+          if (index === ACTIVE_SLIDES - 1) {
+            slidesPosition ++;
+            sliceSlides(slidesPosition, ACTIVE_SLIDES + slidesPosition);
+
+            if (newBulletsArr.length < ACTIVE_SLIDES) {
+              slidesPosition --;
+              sliceSlides(slidesPosition, ACTIVE_SLIDES + slidesPosition);
+            }
+            return true;
+          }
+
+          // Когда обновление слайдов идет на убывание
+          if (index === 0) {
+            if (slidesPosition === 0) {
+              return true;
+            }
+
+            slidesPosition --;
+            sliceSlides(slidesPosition, ACTIVE_SLIDES + slidesPosition);
+
+            return true;
+          }
+        }
+      });
+    };
+
+    swiperNews.on('slideChange', () => {
+      sliceActualSlides();
+    });
+  }
+};
+
+export { initHeroSwiper, initProgramsSwiper, initTabSwiper, initNewsSwiper };
+
