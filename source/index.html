@@ -334,7 +334,7 @@
         </div>
       </section>
 
-      <section class="body__news news">
+      <section class="body__news news" data-test="news">
         <div class="news__wrapper main-wrapper">
           <h2 class="news__title">Новости и материалы</h2>
           <div class="news__tab-swiper swiper">
@@ -359,7 +359,7 @@
           <div class="news__content-swiper-container">
             <div class="news__content-swiper swiper">
               <ul class="news__content-swiper-wrapper swiper-wrapper">
-                <li class="news__content-swiper-slide news__content-swiper-slide--interview swiper-slide">
+                <li class="news__content-swiper-slide swiper-slide">
                   <picture>
                     <source media="(min-width:1440px)" type="image/webp" srcset="img/news-interview-desktop@1x.webp 1x, img/news-interview-desktop@2x.webp 2x" width="604" height="400">
                     <source media="(min-width: 768px)" type="image/webp" srcset="img/news-interview-tablet@1x.webp 1x, img/news-interview-tablet@2x.webp 2x" width="324" height="350">
@@ -370,14 +370,14 @@
                   </picture>
                   <div class="news__content-info-wrapper">
                     <time class="news__content-slide-date" datetime="2023-03-23">23/03/2023</time>
-                    <h3 class="news__content-slide-title">Интервью с участницей программы стажировки</h3>
+                    <h3 class="news__content-slide-title">Интервью с&nbsp;участницей программы стажировки</h3>
                     <div class="news__content-slide-text-wrapper">
-                      <p>Саша рассказывает, как попала в&nbsp;программу и как прошла 6- месячная&nbsp;стажировка в ISOFound.</p>
+                      <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в ISOFound.</p>
                       <a class="news__content-slide-link" href="#"><span class="visually-hidden">Интервью.</span></a>
                     </div>
                   </div>
                 </li>
-                <li class="news__content-swiper-slide news__content-swiper-slide--journey swiper-slide">
+                <li class="news__content-swiper-slide swiper-slide">
                   <picture>
                     <source media="(min-width:1440px)" type="image/webp" srcset="img/news-journey-desktop@1x.webp 1x, img/news-journey-desktop@2x.webp 2x" width="604" height="400">
                     <source media="(min-width: 768px)" type="image/webp" srcset="img/news-journey-tablet@1x.webp 1x, img/news-journey-tablet@2x.webp 2x" width="324" height="350">
@@ -388,7 +388,7 @@
                   </picture>
                   <div class="news__content-info-wrapper">
                     <time class="news__content-slide-date" datetime="2023-03-20">20/03/2023</time>
-                    <h3 class="news__content-slide-title">Путешествуем по миру</h3>
+                    <h3 class="news__content-slide-title">Путешествуем по&nbsp;миру</h3>
                     <div class="news__content-slide-text-wrapper">
                       <p>Какие места посещают наши студенты весной</p>
                       <a class="news__content-slide-link" href="#"><span class="visually-hidden">Места.</span></a>
@@ -413,14 +413,230 @@
                     </div>
                   </div>
                 </li>
-                <li class="news__content-swiper-slide news__content-swiper-slide--career swiper-slide">
+                <li class="news__content-swiper-slide swiper-slide">
                   <picture>
                     <source media="(min-width:1440px)" type="image/webp" srcset="img/news-career-desktop@1x.webp 1x, img/news-career-desktop@2x.webp 2x" width="604" height="400">
                     <source media="(min-width: 768px)" type="image/webp" srcset="img/news-career-tablet@1x.webp 1x, img/news-career-tablet@2x.webp 2x" width="324" height="350">
                     <source type="image/webp" srcset="img/news-career-mobile@1x.webp 1x, img/news-career-mobile@2x.webp 2x" width="290" height="330">
                     <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-career-desktop@1x.jpg 1x, img/news-career-desktop@2x.jpg 2x" width="604" height="400">
                     <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-career-tablet@1x.jpg 1x, img/news-career-tablet@2x.jpg 2x" width="324" height="350">
-                    <img class="news__content-slide-image" src="img/news-career-mobile@1x.jpg" srcset="img/news-career-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Парень с девушкой смотрят друг на друга на фоне книжного стеллажа.">
+                    <img class="news__content-slide-image" src="img/news-career-mobile@1x.jpg" srcset="img/news-career-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Большой стол на котором стоит несколько ноутбуков за которыми работают люди, вид сверху.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-10">10/03/2023</time>
+                    <h3 class="news__content-slide-title">Построй свою карьеру</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Трудоустройство.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-interview-desktop@1x.webp 1x, img/news-interview-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-interview-tablet@1x.webp 1x, img/news-interview-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-interview-mobile@1x.webp 1x, img/news-interview-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-interview-desktop@1x.jpg 1x, img/news-interview-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-interview-tablet@1x.jpg 1x, img/news-interview-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-interview-mobile@1x.jpg" srcset="img/news-interview-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Парень с девушкой смотрят друг на друга на фоне книжного стеллажа.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-23">23/03/2023</time>
+                    <h3 class="news__content-slide-title">Интервью с&nbsp;участницей программы стажировки</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в ISOFound.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Интервью.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-journey-desktop@1x.webp 1x, img/news-journey-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-journey-tablet@1x.webp 1x, img/news-journey-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-journey-mobile@1x.webp 1x, img/news-journey-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-journey-desktop@1x.jpg 1x, img/news-journey-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-journey-tablet@1x.jpg 1x, img/news-journey-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-journey-mobile@1x.jpg" srcset="img/news-journey-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Лазурное побережье с окраиной города.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-20">20/03/2023</time>
+                    <h3 class="news__content-slide-title">Путешествуем по&nbsp;миру</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Места.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide news__content-swiper-slide--volunteer swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-volunteer-desktop@1x.webp 1x, img/news-volunteer-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-volunteer-tablet@1x.webp 1x, img/news-volunteer-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-volunteer-mobile@1x.webp 1x, img/news-volunteer-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-volunteer-desktop@1x.jpg 1x, img/news-volunteer-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-volunteer-tablet@1x.jpg 1x, img/news-volunteer-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-volunteer-mobile@1x.jpg" srcset="img/news-volunteer-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Девушка улыбается показывает значок с надписью volunteer.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-17">17/03/2023</time>
+                    <h3 class="news__content-slide-title">Новая программа волонтёрства</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Программа помощи детям длительностью 4 месяца.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Волонтерство.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-career-desktop@1x.webp 1x, img/news-career-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-career-tablet@1x.webp 1x, img/news-career-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-career-mobile@1x.webp 1x, img/news-career-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-career-desktop@1x.jpg 1x, img/news-career-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-career-tablet@1x.jpg 1x, img/news-career-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-career-mobile@1x.jpg" srcset="img/news-career-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Большой стол на котором стоит несколько ноутбуков за которыми работают люди, вид сверху.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-10">10/03/2023</time>
+                    <h3 class="news__content-slide-title">Построй свою карьеру</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Трудоустройство.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-interview-desktop@1x.webp 1x, img/news-interview-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-interview-tablet@1x.webp 1x, img/news-interview-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-interview-mobile@1x.webp 1x, img/news-interview-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-interview-desktop@1x.jpg 1x, img/news-interview-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-interview-tablet@1x.jpg 1x, img/news-interview-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-interview-mobile@1x.jpg" srcset="img/news-interview-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Парень с девушкой смотрят друг на друга на фоне книжного стеллажа.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-23">23/03/2023</time>
+                    <h3 class="news__content-slide-title">Интервью с&nbsp;участницей программы стажировки</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в ISOFound.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Интервью.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-journey-desktop@1x.webp 1x, img/news-journey-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-journey-tablet@1x.webp 1x, img/news-journey-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-journey-mobile@1x.webp 1x, img/news-journey-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-journey-desktop@1x.jpg 1x, img/news-journey-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-journey-tablet@1x.jpg 1x, img/news-journey-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-journey-mobile@1x.jpg" srcset="img/news-journey-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Лазурное побережье с окраиной города.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-20">20/03/2023</time>
+                    <h3 class="news__content-slide-title">Путешествуем по&nbsp;миру</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Места.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide news__content-swiper-slide--volunteer swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-volunteer-desktop@1x.webp 1x, img/news-volunteer-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-volunteer-tablet@1x.webp 1x, img/news-volunteer-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-volunteer-mobile@1x.webp 1x, img/news-volunteer-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-volunteer-desktop@1x.jpg 1x, img/news-volunteer-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-volunteer-tablet@1x.jpg 1x, img/news-volunteer-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-volunteer-mobile@1x.jpg" srcset="img/news-volunteer-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Девушка улыбается показывает значок с надписью volunteer.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-17">17/03/2023</time>
+                    <h3 class="news__content-slide-title">Новая программа волонтёрства</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Программа помощи детям длительностью 4 месяца.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Волонтерство.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-career-desktop@1x.webp 1x, img/news-career-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-career-tablet@1x.webp 1x, img/news-career-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-career-mobile@1x.webp 1x, img/news-career-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-career-desktop@1x.jpg 1x, img/news-career-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-career-tablet@1x.jpg 1x, img/news-career-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-career-mobile@1x.jpg" srcset="img/news-career-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Большой стол на котором стоит несколько ноутбуков за которыми работают люди, вид сверху.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-10">10/03/2023</time>
+                    <h3 class="news__content-slide-title">Построй свою карьеру</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Трудоустройство.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-interview-desktop@1x.webp 1x, img/news-interview-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-interview-tablet@1x.webp 1x, img/news-interview-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-interview-mobile@1x.webp 1x, img/news-interview-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-interview-desktop@1x.jpg 1x, img/news-interview-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-interview-tablet@1x.jpg 1x, img/news-interview-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-interview-mobile@1x.jpg" srcset="img/news-interview-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Парень с девушкой смотрят друг на друга на фоне книжного стеллажа.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-23">23/03/2023</time>
+                    <h3 class="news__content-slide-title">Интервью с&nbsp;участницей программы стажировки</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в ISOFound.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Интервью.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-journey-desktop@1x.webp 1x, img/news-journey-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-journey-tablet@1x.webp 1x, img/news-journey-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-journey-mobile@1x.webp 1x, img/news-journey-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-journey-desktop@1x.jpg 1x, img/news-journey-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-journey-tablet@1x.jpg 1x, img/news-journey-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-journey-mobile@1x.jpg" srcset="img/news-journey-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Лазурное побережье с окраиной города.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-20">20/03/2023</time>
+                    <h3 class="news__content-slide-title">Путешествуем по&nbsp;миру</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Места.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide news__content-swiper-slide--volunteer swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-volunteer-desktop@1x.webp 1x, img/news-volunteer-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-volunteer-tablet@1x.webp 1x, img/news-volunteer-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-volunteer-mobile@1x.webp 1x, img/news-volunteer-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-volunteer-desktop@1x.jpg 1x, img/news-volunteer-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-volunteer-tablet@1x.jpg 1x, img/news-volunteer-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-volunteer-mobile@1x.jpg" srcset="img/news-volunteer-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Девушка улыбается показывает значок с надписью volunteer.">
+                  </picture>
+                  <div class="news__content-info-wrapper">
+                    <time class="news__content-slide-date" datetime="2023-03-17">17/03/2023</time>
+                    <h3 class="news__content-slide-title">Новая программа волонтёрства</h3>
+                    <div class="news__content-slide-text-wrapper">
+                      <p>Программа помощи детям длительностью 4 месяца.</p>
+                      <a class="news__content-slide-link" href="#"><span class="visually-hidden">Волонтерство.</span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__content-swiper-slide swiper-slide">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/news-career-desktop@1x.webp 1x, img/news-career-desktop@2x.webp 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/news-career-tablet@1x.webp 1x, img/news-career-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-career-mobile@1x.webp 1x, img/news-career-mobile@2x.webp 2x" width="290" height="330">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/news-career-desktop@1x.jpg 1x, img/news-career-desktop@2x.jpg 2x" width="604" height="400">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/news-career-tablet@1x.jpg 1x, img/news-career-tablet@2x.jpg 2x" width="324" height="350">
+                    <img class="news__content-slide-image" src="img/news-career-mobile@1x.jpg" srcset="img/news-career-mobile@2x.jpg 2x" loading="lazy" width="290" height="330" alt="Большой стол на котором стоит несколько ноутбуков за которыми работают люди, вид сверху.">
                   </picture>
                   <div class="news__content-info-wrapper">
                     <time class="news__content-slide-date" datetime="2023-03-10">10/03/2023</time>
@@ -437,6 +653,117 @@
               <button class="news__content-swiper-button-prev swiper-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд.</span></button>
               <div class="news__content-swiper-pagination swiper-pagination"></div>
               <button class="news__content-swiper-button-next swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд.</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="body__faq faq" data-test="FAQ">
+        <div class="faq__wrapper main-wrapper">
+          <h2 class="faq__title">Вопросы и ответы</h2>
+          <ul class="faq__list">
+            <li class="faq__item">
+              <details class="faq__text-wrapper">
+                <summary class="faq__text-title">Кто организатор? Какие сроки у программы?</summary>
+                <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details class="faq__text-wrapper">
+                <summary class="faq__text-title">Что такое грант на&nbsp;обучение?</summary>
+                <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details class="faq__text-wrapper" open>
+                <summary class="faq__text-title">Как определяется стоимость программы?</summary>
+                <p>Полная стоимость определяется организаторами в зависимости от&nbsp;направления. В большинстве случаев грант «Стажировка» не&nbsp;покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details class="faq__text-wrapper faq__text-wrapper--huge">
+                <summary class="faq__text-title">Признаётся ли учёба в&nbsp;рамках проекта <br class="faq__text-title-br">для дальнейшего обучения?</summary>
+                <p>ОСтуденты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details class="faq__text-wrapper faq__text-wrapper--huge">
+                <summary class="faq__text-title">Как выглядит полный процесс регистрации на&nbsp;программу «Стажировка»?</summary>
+                <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="body__reviews reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__swiper-container">
+            <div class="reviews__swiper swiper">
+              <ul class="reviews__swiper-wrapper swiper-wrapper">
+                <li class="reviews__swiper-slide swiper-slide">
+                  <div class="reviews__author-wrapper">
+                    <div class="reviews__author">
+                      <picture>
+                        <source media="(min-width: 768px)" type="image/webp" srcset="img/reviews-lola-tablet@1x.webp 1x, img/reviews-lola-tablet@2x.webp 2x" width="90" height="90">
+                        <source type="image/webp" srcset="img/reviews-lola-mobile@1x.webp 1x, img/reviews-lola-mobile@2x.webp 2x" width="60" height="60">
+                        <source media="(min-width: 768px)" type="image/jpeg" srcset="img/reviews-lola-tablet@1x.jpg 1x, img/reviews-lola-tablet@2x.jpg 2x" width="90" height="90">
+                        <img class="reviews__author-image" src="img/reviews-lola-mobile@1x.jpg" srcset="img/reviews-lola-mobile@2x.jpg 2x" loading="lazy" width="60" height="60" alt="Девушка с кудрявыми волосами в очках.">
+                      </picture>
+                      <h3 class="reviews__author-name">Лола Алекс</h3>
+                    </div>
+                    <div class="reviews__event-wrapper">
+                      <ul class="reviews__event-list">
+                        <li class="reviews__event-item">
+                          <h4 class="reviews__event-item-title">Программа</h4>
+                          <p class="reviews__event-description">Masa Art Challenge</p>
+                        </li>
+                        <li class="reviews__event-item">
+                          <h4 class="reviews__event-item-title">Дата</h4>
+                          <time class="reviews__event-description" datetime="2022-10">Осень 2022</time>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <strong class="eviews__author-comment">Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</strong>
+                  <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+                </li>
+                <li class="reviews__swiper-slide swiper-slide">
+                  <div class="reviews__author-wrapper">
+                    <div class="reviews__author">
+                      <picture>
+                        <source media="(min-width: 768px)" type="image/webp" srcset="img/reviews-david-tablet@1x.webp 1x, img/reviews-david-tablet@2x.webp 2x" width="90" height="90">
+                        <source type="image/webp" srcset="img/reviews-david-mobile@1x.webp 1x, img/reviews-david-mobile@2x.webp 2x" width="60" height="60">
+                        <source media="(min-width: 768px)" type="image/jpeg" srcset="img/reviews-david-tablet@1x.jpg 1x, img/reviews-david-tablet@2x.jpg 2x" width="90" height="90">
+                        <img class="reviews__author-image" src="img/reviews-david-mobile@1x.jpg" srcset="img/reviews-david-mobile@2x.jpg 2x" loading="lazy" width="60" height="60" alt="Девушка с кудрявыми волосами в очках.">
+                      </picture>
+                      <h3 class="reviews__author-name">Давид Иванов</h3>
+                    </div>
+                    <div class="reviews__event-wrapper">
+                      <ul class="reviews__event-list">
+                        <li class="reviews__event-item">
+                          <h4 class="reviews__event-item-title">Программа</h4>
+                          <p class="reviews__event-description">Volunteer Chance</p>
+                        </li>
+                        <li class="reviews__event-item">
+                          <h4 class="reviews__event-item-title">Дата</h4>
+                          <time class="reviews__event-description" datetime="2022-07">Лето 2022</time>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <strong class="eviews__author-comment">Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</strong>
+                  <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="reviews__interaction-wrapper">
+              <div class="reviews__swiper-scrollbar swiper-scrollbar"></div>
+              <div class="reviews__button-wrapper">
+                <button class="reviews__swiper-button-prev swiper-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд.</span></button>
+                <button class="reviews__swiper-button-next swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд.</span></button>
+              </div>
             </div>
           </div>
         </div>
@@ -466,7 +793,7 @@
             <label class="modal__label" for="city">Выберите город</label>
             <div class="modal__select-container">
               <select class="modal__select modal__validate-element modal__validate-element--string modal__validate-element--city" name="select" id="city" required aria-label="Укажите город.">
-                <option value="" selected></option>
+                <option value="" label=" " selected></option>
                 <option value="moscow">Москва</option>
                 <option value="vologda">Вологда</option>
                 <option value="penza">Пенза</option>
@@ -497,8 +824,7 @@
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
 
-<!-- <div data-test="news">news</div> -->
-<!-- <div data-test="FAQ">FAQ</div> -->
+
 <!-- <div data-test="reviews">reviews</div> -->
 <!-- <div data-test="contacts">contacts</div> -->
 <!-- <div data-test="form">form</div> -->

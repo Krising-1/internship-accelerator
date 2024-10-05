@@ -103,8 +103,9 @@ const initTabSwiper = () => {
 
 
     breakpoints: {
-      1440: {
-        allowTouchMove: false,
+      768: {
+        spaceBetween: 0,
+        enabled: false,
       },
     }
   });
@@ -135,8 +136,23 @@ const initNewsSwiper = () => {
 
 
     breakpoints: {
+      768: {
+        width: 678,
+        spaceBetween: 30,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+
       1440: {
+        width: 1240,
         allowTouchMove: false,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 32,
+
+        grid: {
+          rows: 1,
+        },
       },
     }
   });
