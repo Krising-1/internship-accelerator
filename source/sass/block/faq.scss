@@ -4,7 +4,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
-    padding-bottom: 60px;
+    padding-bottom: 61px;
   }
 }
 
@@ -292,6 +292,19 @@
     &::before {
       right: -53px;
     }
+  }
+}
+
+.faq__text-title.faq__text-title--disabled {
+  pointer-events: none;
+
+  &::after {
+    background-color: $button-disabled;
+    border-color: $button-disabled;
+  }
+
+  &::before {
+    background-color: $button-white;
   }
 }
 

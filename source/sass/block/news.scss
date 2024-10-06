@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 63px;
   }
 }
 
@@ -81,6 +81,16 @@
   letter-spacing: 0.24px;
   text-transform: uppercase;
   color: rgba($color: $button-primary, $alpha: 0.6);
+
+  &:hover {
+    color: $button-primary;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $button-primary;
+    background-color: $button-white;
+  }
 
   @media (min-width: $tablet-width) {
     font: $button-medium-tablet;
@@ -162,14 +172,11 @@
   margin: 0;
   width: 22px;
   height: 22px;
-
-  &::after {
-    margin-bottom: -3px;
-  }
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     &::after {
-      margin-bottom: -4px;
+      margin-bottom: 0;
     }
   }
 }
@@ -179,11 +186,28 @@
   line-height: 14px;
   opacity: 1;
   display: none;
+  box-sizing: border-box;
 
   width: 26px;
   height: 26px;
   background-color: transparent;
   color: rgba($color: $button-primary, $alpha: 0.5);
+
+  &:hover {
+    border: 2px solid $button-primary;
+  }
+
+  &:focus-visible {
+    border: 2px solid $button-primary;
+    outline: none;
+    background-color: $button-white;
+  }
+
+  &:active {
+    border: 2px solid $button-active;
+    color: $button-white;
+    background-color: $button-active;
+  }
 
   @media (min-width: $tablet-width) {
     font: $text-regular-tablet;

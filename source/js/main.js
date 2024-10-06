@@ -4,7 +4,7 @@
 // import 'swiper/css';
 
 import { addSwitcherBurger, listMenuOpener } from './nav-switcher.js';
-import { initHeroSwiper, initProgramsSwiper, initTabSwiper, initNewsSwiper } from './swipers.js';
+import { initHeroSwiper, initProgramsSwiper, initTabSwiper, initNewsSwiper, initReviewsSwiper } from './swipers.js';
 import { openModal, addFormValidate } from './modal-validate.js';
 import { tabChanger } from './news-tab-changer.js';
 
@@ -18,4 +18,5 @@ initProgramsSwiper();
 initTabSwiper();
 tabChanger();
 initNewsSwiper();
+initReviewsSwiper();
 

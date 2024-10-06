@@ -222,5 +222,47 @@ const initNewsSwiper = () => {
   }
 };
 
-export { initHeroSwiper, initProgramsSwiper, initTabSwiper, initNewsSwiper };
+const initReviewsSwiper = () => {
+  new Swiper('.reviews__swiper', {
+
+    modules: [Navigation, Scrollbar],
+
+    width: 290,
+    speed: 500,
+    spaceBetween: 30,
+
+    navigation: {
+      prevEl: '.reviews__swiper-button-prev',
+      nextEl: '.reviews__swiper-button-next',
+    },
+
+    breakpoints: {
+      768: {
+        width: 560,
+        slidesPerView: 1,
+
+        scrollbar: {
+          el: '.reviews__swiper-scrollbar',
+          draggable: true,
+          dragSize: '326',
+        },
+      },
+
+      1440: {
+        width: 1240,
+        allowTouchMove: false,
+        slidesPerView: 2,
+        spaceBetween: 32,
+
+        scrollbar: {
+          el: '.reviews__swiper-scrollbar',
+          draggable: true,
+          dragSize: '394',
+        },
+      },
+    }
+  });
+};
+
+export { initHeroSwiper, initProgramsSwiper, initTabSwiper, initNewsSwiper, initReviewsSwiper };
 

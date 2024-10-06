@@ -1,7 +1,9 @@
 .swiper-button-prev.programs__swiper-button-prev,
 .swiper-button-next.programs__swiper-button-next,
 .swiper-button-prev.news__content-swiper-button-prev,
-.swiper-button-next.news__content-swiper-button-next {
+.swiper-button-next.news__content-swiper-button-next,
+.swiper-button-prev.reviews__swiper-button-prev,
+.swiper-button-next.reviews__swiper-button-next {
   width: 22px;
   height: 22px;
   padding: 0;
@@ -28,6 +30,7 @@
 
   &:focus-visible {
     background-color: $button-white;
+    outline: none;
   }
 
   &:active {
@@ -48,16 +51,19 @@
   }
 }
 
-.swiper-button-prev.programs__swiper-button-prev {
+.swiper-button-prev.programs__swiper-button-prev,
+.swiper-button-prev.reviews__swiper-button-prev {
   transform: rotate(-180deg);
   left: -41px;
 }
 
-.swiper-button-next.programs__swiper-button-next {
+.swiper-button-next.programs__swiper-button-next,
+.swiper-button-next.reviews__swiper-button-next {
   right: -11px;
 }
 
-.programs__interaction-wrapper .swiper-scrollbar.swiper-scrollbar-horizontal {
+.programs__interaction-wrapper .swiper-scrollbar.swiper-scrollbar-horizontal,
+.reviews__interaction-wrapper .swiper-scrollbar.swiper-scrollbar-horizontal {
   @media (min-width: $tablet-width) {
     width: 562px;
     height: 2px;

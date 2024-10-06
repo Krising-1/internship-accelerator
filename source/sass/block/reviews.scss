@@ -1,0 +1,236 @@
+.reviews__wrapper {
+  padding-top: 56px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 66px;
+  }
+}
+
+.reviews__title {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+  font: $h2-mobile;
+  color: $text-extra;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 45px;
+    font: $h2-tablet;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 103px;
+    font: $h2-desktop;
+    margin-bottom: 45px;
+  }
+}
+
+.reviews__swiper-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 100px;
+  }
+}
+
+.reviews__swiper {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.reviews__swiper-wrapper {
+  @include list-style-none;
+}
+
+.reviews__swiper-slide.swiper-slide {
+  box-sizing: border-box;
+  padding: 30px 15px;
+  border: 2px solid $background-secondary;
+  border-radius: 16px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 49px 50px 50px;
+  }
+}
+
+.reviews__author-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 456px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 503px;
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    gap: 16px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 15px;
+  }
+}
+
+.reviews__author-image {
+  display: block;
+  border-radius: 50%;
+}
+
+.reviews__author-name {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-extra;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font: $h6-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $text-medium-desktop;
+  }
+}
+
+.reviews__event-list {
+  @include list-style-none;
+
+  display: flex;
+  gap: 26px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    gap: 26px;
+  }
+}
+
+.reviews__event-item-title {
+  font: $captions-regular-mobile;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  margin: 0;
+  color: $text-extra;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.reviews__event-description {
+  font: $text-extra-small-mobile;
+  margin: 0;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.reviews__author-comment {
+  font: $h4-mobile;
+  color: $text-extra;
+  display: block;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    font: $h6-tablet;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $h6-desktop;
+    margin-bottom: 25px;
+  }
+}
+
+.reviews__swiper-slide p {
+  margin: 0;
+}
+
+.reviews__button-wrapper {
+  position: absolute;
+  top: -34px;
+  right: 26px;
+
+  @media (min-width: $tablet-width) {
+    max-width: fit-content;
+    position: absolute;
+    top: 6px;
+    right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 6px;
+    right: 11px;
+  }
+}
+
+.reviews__interaction-wrapper .reviews__swiper-scrollbar.swiper-scrollbar {
+  @media (min-width: $tablet-width) {
+    width: 562px;
+    left: -23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1136px;
+    left: 0;
+  }
+}
+
+.reviews__interaction-wrapper {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 678px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+  }
+}
